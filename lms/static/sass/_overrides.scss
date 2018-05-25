@@ -57,10 +57,28 @@ ol.nav-global>li>a {
   border:none !important;
 }
 
-.home>header .title>hgroup h2 {
-  background: url('../telecom/images/cabecera.png');
+.home > header {
+	background: url('../telecom/images/cabecera.png');
 	background-size: cover;
-  background-position: 50%;
+	background-position: 50%;
+
+	.outer-wrapper {
+		padding-top: 150px;
+	    padding-bottom: 150px;
+	}
+	.title {
+		background: transparent;
+		box-shadow: none;
+		margin-left: 0;
+
+		> .heading-group h1 {
+			color: #fff;
+			text-shadow: none;
+		}
+		> .heading-group p {
+			color: #fff;
+		}
+	}
 }
 
 .user-image-frame {
