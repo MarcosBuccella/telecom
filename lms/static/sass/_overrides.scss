@@ -58,7 +58,9 @@ ol.nav-global>li>a {
 }
 
 .home>header .title>hgroup h2 {
-  text-transform: none !important;
+  background: url('../telecom/images/cabecera.png');
+	background-size: cover;
+  background-position: 50%;
 }
 
 .user-image-frame {
