@@ -61,26 +61,27 @@ ol.nav-global>li>a {
 	background: url('../telecom/images/cabecera.png');
 	background-size: cover;
 	background-position: 50%;
-}
 
-.home > header .outer-wrapper {
-	padding-top: 150px;
-	padding-bottom: 150px;
-}
-
-.home > header .title {
+	.outer-wrapper {
+		padding-top: 150px;
+	    padding-bottom: 150px;
+	}
+	.title {
 		background: transparent;
 		box-shadow: none;
-margin-left: 0;
-}
+		margin-left: 0;
 
-.home > header .title > .heading-group h1 {
+		> .heading-group h1 {
 			color: #fff;
 			text-shadow: none;
-}
-
-.home > header .title > .heading-group p {
+		}
+		> .heading-group h2 {
+ 			text-transform: none !important;
+		}
+		> .heading-group p {
 			color: #fff;
+		}
+	}
 }
 
 .user-image-frame {
