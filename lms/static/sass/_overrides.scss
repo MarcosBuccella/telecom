@@ -66,21 +66,10 @@ ol.nav-global>li>a {
 		padding-top: 150px;
 	    padding-bottom: 150px;
 	}
-	.title {
-		background: transparent;
-		box-shadow: none;
-		margin-left: 0;
+}
 
-		> .heading-group h1 {
- 			text-transform: none !important;
-		}
-		> .heading-group h2 {
- 			text-transform: none !important;
-		}
-		> .heading-group p {
- 			text-transform: none !important;
-		}
-	}
+.home>header .title>hgroup h2 {
+  text-transform: none !important;
 }
 
 .user-image-frame {
