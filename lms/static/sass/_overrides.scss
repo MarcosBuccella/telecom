@@ -6,10 +6,42 @@ body {
   border-bottom: 4px solid #050562 !important;
 }
 
-.home > header {
-	background: url('../telecom/images/cabecera.png') !important;
-	background-size: cover !important;
-	background-position: 50% !important;
+.home > header .media .hero {
+    background: url('../telecom/images/cabecera.png') no-repeat scroll center center;
+    background-size: cover !important;
+    background-position: 50% !important;
+}
+
+.home > header .outer-wrapper {
+  display: table;
+  min-width: 690px;
+  max-width: 700px;
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+.home > header .outer-wrapper:after {
+  height: 100%;
+}
+
+.home > header .title > hgroup {
+  width: 100%;
+}
+
+.home > header .title {
+  float: none;
+  display: table-cell;
+  width: 500px;
+}
+
+.home > header .media {
+  float: none;
+  display: table-cell;
+  width: 155px;
+}
+
+.home > header .title > hgroup > img {
+    padding-top: 5px;
 }
 
 ol.nav-global>li>a {
