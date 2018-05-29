@@ -6,6 +6,30 @@ body {
   border-bottom: 4px solid #050562 !important;
 }
 
+.home > header {
+	background: url('../telecom/images/cabecera.png') !important;
+	background-size: cover !important;
+	background-position: 50% !important;
+
+	.outer-wrapper {
+		padding-top: 150px !important;
+	    padding-bottom: 150px !important;
+	}
+	.title {
+		background: transparent !important;
+		box-shadow: none;
+		margin-left: 0 !important;
+
+		> .heading-group h1 {
+			color: #fff !important;
+			text-shadow: none !important;
+		}
+		> .heading-group p {
+			color: #fff !important;
+		}
+	}
+}
+
 ol.nav-global>li>a {
   border-bottom: 4px solid #00468c;
   padding-bottom: 10px !important;
@@ -57,7 +81,7 @@ ol.nav-global>li>a {
   border:none !important;
 }
 
-.home>header .title>hgroup h2 {
+.title>hgroup h2 {
   text-transform: none !important;
 }
 
