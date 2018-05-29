@@ -72,14 +72,13 @@ ol.nav-global>li>a {
 		margin-left: 0;
 
 		> .heading-group h1 {
-			color: #fff;
-			text-shadow: none;
+ 			text-transform: none !important;
 		}
 		> .heading-group h2 {
  			text-transform: none !important;
 		}
 		> .heading-group p {
-			color: #fff;
+ 			text-transform: none !important;
 		}
 	}
 }
