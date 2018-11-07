@@ -14,9 +14,7 @@
     
         <h2>${_("¿Cómo puedo desarrollar un curso??")}</h2>
         <p>
-            ${Text(_("Para desarrollar un curso, puede contactarnos a través de {email} exponiendo de forma clara su idea. Será contactado por el mismo medio si su curso resulta aprobado para ser agregado a la plataforma.")).format(
-            email=HTML('<a href="mailto:{email}">{email}</a>').format(
-                email=Text(static.get_tech_support_email_address())}<br/>
+            ${_("Para desarrollar un curso, puede contactarnos a través de {email} exponiendo de forma clara su idea. Será contactado por el mismo medio si su curso resulta aprobado para ser agregado a la plataforma.")}<br/>
         </p>
     </section>
 </main>
