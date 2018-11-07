@@ -7,6 +7,12 @@
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
         <h1>${_("Contact")}</h1>
-        <p>${_("This page left intentionally blank. Feel free to add your own content.")}</p>
+        <p>
+        ${Text(_('Puede contactar con nosotros a través de {email}.')).format(
+            email=HTML('<a href="mailto:{email}">{email}</a>').format(
+                email=Text(static.get_tech_support_email_address())
+            )
+        )}
+        </p>
     </section>
 </main>
