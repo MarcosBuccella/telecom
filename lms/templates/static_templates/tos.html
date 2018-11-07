@@ -16,22 +16,16 @@
               <li>${_("Personas externas a la Universidad de Carabobo que deseen formarse académicamente.")}</li>
             </ul>
             ${_(
-              '''La plataforma MOOC UC es un servicio ofrecido por la Escuela de Ingeniería de Telecomunicaciones de la Universidad de Carabobo. La solicitud y / o el uso de un curso de la plataforma indica la aceptación de estos Términos de Servicio. MOOC UC se ofrece "tal como está" y está destinada únicamente a fines no comerciales.'''
-            )}
+              '''La plataforma MOOC UC es un servicio ofrecido por la Escuela de Ingeniería de Telecomunicaciones de la Universidad de Carabobo. La solicitud y / o el uso de un curso de la plataforma indica la aceptación de estos Términos de Servicio. MOOC UC se ofrece "tal como está" y está destinada únicamente a fines no comerciales.''')}
         </p>
 
         <h2>${_("Soporte")}</h2>
         <p>
-           ${Text(_('''El equipo de soporte de plataforma responderá a las preguntas o dificultades durante las horas de oficina normales de la escuela de Ingeniería de Telecomunicaciones de la universidad y trabajará para resolver los problemas tan pronto como sea práctico dentro de esta ventana de tiempo. Las solicitudes de soporte, los informes de errores y los comentarios deben enviarse a {email}.''')).format(
-            email=HTML('<a href="mailto:{email}">{email}</a>').format(
-                email=Text(static.get_tech_support_email_address())
+           ${_('''El equipo de soporte de plataforma responderá a las preguntas o dificultades durante las horas de oficina normales de la escuela de Ingeniería de Telecomunicaciones de la universidad y trabajará para resolver los problemas tan pronto como sea práctico dentro de esta ventana de tiempo. Las solicitudes de soporte, los informes de errores y los comentarios deben enviarse a {email}.'''))
         </p>
 
         <p>
-        ${Text(_('''Si tiene algún problema con MOOC UC, contáctenos a través de {email}. En el caso de una interrupción prolongada del sistema (planificada o no planificada), nos pondremos en contacto con los instructores del curso.''')).format(
-            email=HTML('<a href="mailto:{email}">{email}</a>').format(
-                email=Text(static.get_tech_support_email_address())
-          )}
+        ${_('''Si tiene algún problema con MOOC UC, contáctenos a través de {email}. En el caso de una interrupción prolongada del sistema (planificada o no planificada), nos pondremos en contacto con los instructores del curso.''')}
         </p>
 
         <h2>${_("Uso aceptable")}</h2>
