@@ -1,5 +1,8 @@
 <%page expression_filter="h"/>
-<%! from django.utils.translation import ugettext as _ %>
+<%!
+from django.utils.translation import ugettext as _
+from openedx.core.djangolib.markup import HTML, Text
+%>
 <%inherit file="../main.html" />
 
 <%block name="pagetitle">${_("Contact")}</%block>
@@ -8,11 +11,8 @@
     <section class="container about">
         <h1>${_("Contact")}</h1>
         <p>
-        ${Text(_('Puede contactar con nosotros a través de {email}.')).format(
-            email=HTML('<a href="mailto:{email}">{email}</a>').format(
-                email=Text(static.get_tech_support_email_address())
-            )
-        )}
-        </p>
+        ${Text(_("Puede contactar con nosotros a través de {tech_support_email}.")).format(
+            tech_support_email=HTML('<a href="mailto:{0}">{0}</a>').format(Text(settings.TECH_SUPPORT_EMAIL))
+        )}</p>
     </section>
 </main>
