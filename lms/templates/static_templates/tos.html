@@ -1,4 +1,3 @@
-<%page expression_filter="h"/>
 <%! from django.utils.translation import ugettext as _ %>
 <%inherit file="../main.html" />
 
@@ -6,7 +5,62 @@
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
-        <h1>${_("Terms of Service")}</h1>
-        <p>${_("")}</p>
+        <h1 class="heading-left">${_("Terms of Service")}</h1>
+        <br/>
+        <h2>${_("Intent")}</h2>
+        <p>
+            ${_("This service is intended for use by:")}<br/>
+            <ul>
+              <li>${_("MIT students enrolled at the Institute")}</li>
+              <li>${_("MIT faculty, instructors, teaching assistants and staff")}</li>
+              <li>${_("Non-MIT affiliates enrolled and/or participating in an academic course")}</li>
+            </ul>
+            ${_(
+              '''Residential MITx is a service offered by MIT's Office of Digital Learning (ODL) Requesting
+              and/or using a Residential MITx site indicates assent to these Terms of Service. Residential MITx
+              is offered on an "as is" basis and is intended for Institute-related business and interactions only.'''
+            )}
+        </p>
+
+        <h2>${_("User Access")}</h2>
+        <p>
+          ${_('''Be default, everyone with a valid MIT certificate can access Residential MITx & as such can
+            for and participate in any course on the system.  Instructors have the ability & responsibility to
+            override this default, limiting access to officially registered students, if they so desire.
+            Instructors can manually add people with MIT Collaboration accounts to their courses, and unlike valid
+            MIT certificate holders, users with MIT Collaboration accounts only have access to the courses they
+            have specifically been added to.  Instructors are responsible for the managing of student access to and
+            students requests for any and all course materials posted on current and past course sites.''')}
+        </p>
+
+        <h2>${_("Instructor Access")}</h2>
+        <p>
+           ${_('''Course administrators have access, upon request, to course sites, present and past
+            for a minimum of five years. This is subject to change based on archive and storage limitations.
+            Domain administrators will receive notification prior to any permanent archival of course sites.''')}
+        </p>
+
+        <h2>${_("Archiving process")}</h2>
+        <p>
+         ${_('''At term's end, courses are archived and removed from view, but will remain visible, or be
+        reinstated at the course instructor's request.''')}
+        </p>
+
+        <h2>${_("Copyright")}</h2>
+        <p>
+          ${_('''ODL, in accordance with Institute policy, is committed to complying with all copyright laws
+          to the fullest extent possible. Information for MIT faculty mounting course material on the Web
+          is available at MIT Libraries Copyright Information. For an extensive list of guides and
+          references to copyright policies and practices at MIT, see Copyright at MIT.''')}
+        </p>
+
+        <h2>${_("Intellectual Property")}</h2>
+        <p>
+           ${_('''Unauthorized use of third-party copyrighted work is illegal, unethical,
+            raises significant financial liability, and damages the reputation of MIT.
+            All Residential MITx users must exercise scrupulous care to identify the source of every
+            third-party owned element posted in the Residential MITx System.''')}
+        </p>
+      
     </section>
 </main>
