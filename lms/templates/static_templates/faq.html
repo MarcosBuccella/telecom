@@ -7,6 +7,16 @@
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
         <h1>${_("FAQ")}</h1>
-        <p>${_("This page left intentionally blank. Feel free to add your own content.")}</p>
+        <h2>${_("¿Cómo puedo inscribirme en un curso??")}</h2>
+        <p>
+            ${_("Para insrcribirse en un curso, debe registrarse en la plataforma a través del enlace que aparece en la parte superior de la misma. Una vez se encuentre registrado, podrá inscribirse en los cursos que desee, a través de la página principal.")}<br/>
+        </p>
+    
+        <h2>${_("¿Cómo puedo desarrollar un curso??")}</h2>
+        <p>
+            ${Text(_("Para desarrollar un curso, puede contactarnos a través de {email} exponiendo de forma clara su idea. Será contactado por el mismo medio si su curso resulta aprobado para ser agregado a la plataforma.")).format(
+            email=HTML('<a href="mailto:{email}">{email}</a>').format(
+                email=Text(static.get_tech_support_email_address())}<br/>
+        </p>
     </section>
 </main>
