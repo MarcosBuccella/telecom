@@ -1,8 +1,8 @@
 <svg width="980" height="290" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient id="MyGradient">
-            <stop offset="5%"  stop-color=rgb(12,149,183)/>
-            <stop offset="95%" stop-color=rgb(32,56,100)/>
+            <stop offset="5%"  stop-color="green"/>
+            <stop offset="95%" stop-color="gold"/>
         </linearGradient>
     </defs>
 
