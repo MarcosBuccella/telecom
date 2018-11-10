@@ -3,8 +3,8 @@
         <linearGradient id="MyGradient"
                     spreadMethod="pad"
                     gradientTransform="rotate(45)">
-            <stop offset="5%"  stop-color="rgb(12,149,183)"/>
-            <stop offset="95%" stop-color="rgb(32,56,100)"/>
+            <stop offset="0%"  stop-color="rgb(12,149,183)"/>
+            <stop offset="100%" stop-color="rgb(32,56,100)"/>
         </linearGradient>
     </defs>
 
